@@ -1,5 +1,5 @@
 from calculator import suma, resta, multiplicacion, division
-from validarNumero import obtener_numero_positivo
+from app.resources import obtener_numero_positivo
 
 def main():
     print("Calculadora de números positivos")
