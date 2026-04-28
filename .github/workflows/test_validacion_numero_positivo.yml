@@ -1,4 +1,4 @@
-name: Test Suma Decimales
+name: Test Validacion Numero Positivo
 on: 
   push:
     branches:
@@ -22,10 +22,10 @@ jobs:
 
       - name: Run tests and generate HTML report
         run: |
-          python -m pytest testing/test_suma_decimales.py --html=report-suma-decimales.html --self-contained-html
+          python -m pytest testing/test_validacion_numero_positivo.py --html=report-validacion_numero_positivo.html --self-contained-html
 
       - name: Upload HTML report
         uses: actions/upload-artifact@v7
         with:
-          name: report-suma-decimales
-          path: report-suma-decimales.html
+          name: report-validacion_numero_positivo
+          path: report-validacion_numero_positivo.html
